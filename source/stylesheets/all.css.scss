@@ -12,3 +12,65 @@
 @import "components/*";
 @import "pages/*";
 @import "vendor/*";
+
+#banner {
+  background-image: url(../images/background.jpg);
+  color: white;
+  padding: 150px 0;
+  background-size: cover;
+  height: 650px;
+}
+
+#banner h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#banner p {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#footer {
+  background: #141414;
+  padding: 30px 0;
+  color: gainsboro;
+}
+#footer p {
+  margin-top: 17px;
+}
+#footer ul {
+  margin-top: 10px;
+}
+#footer a {
+  color: gainsboro;
+  font-size: 30px;
+  letter-spacing: 20px;
+  transition: color 0.5s ease;
+}
+#footer a:hover {
+  color: red;
+}
+
+@import url("banner.css");
+@import url("footer.css");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #141414;
+}
+.card{
+  padding: 10px;
+  font-weight: 300;
+}
+.card h2{
+  font-size: 20px;
+}
+.padded {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+.blue-bg {
+  background: #469AE0;
+  color: white;
+}
