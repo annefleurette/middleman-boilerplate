@@ -48,7 +48,7 @@ title: Le Wagon Middleman boilerplate
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="card" data-sr>
+          <div class="card img-popover" data-content="<h4 class='text-muted'>Storing your texts</h4><p class='text-muted'>More information soon</p>">
             <%= image_tag "data.svg" %>
             <h2>Storing your texts</h2>
             <p>Everything line writen with your stylus is stored in the cloud, so that <strong>it's never lost</strong></p>
@@ -164,4 +164,15 @@ title: Le Wagon Middleman boilerplate
 
 <script>
   window.sr = new scrollReveal();
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(".img-popover").popover({
+    html: true,
+    trigger: "hover",
+    placement: "bottom"
+  });
+})
 </script>
